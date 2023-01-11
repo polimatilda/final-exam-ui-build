@@ -1,0 +1,155 @@
+/* --- start of CSS reset --- */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  background: transparent;
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+a img {
+  border: none;
+}
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+button,
+textarea,
+select {
+  appearance: none !important;
+  border-radius: 0;
+}
+
+/* --- end of CSS reset --- */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f8f7f3;
+  color: #1a24fb;
+  font-weight: normal;
+}
+
+/* HEADER */
+
+.material-icons.md-24 {
+  font-size: 24px;
+  padding-right: 10px;
+}
+
+.header-div {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a24fb;
+  color: #f8f7f3;
+}
+
+.page-title {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding-left: 10px;
+}
+
+/* BOOK CARDS */
+
+.books-container {
+  max-width: 1280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px 20px;
+  margin: 100px 50px;
+}
+
+.book-card {
+  padding: 40px;
+  border: #1a24fb 1px solid;
+  max-width: 370px;
+  min-width: 335px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+@media only screen and (min-width: 850px) {
+  .book-card {
+    height: 450px;
+  }
+}
+
+.book-author {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.book-id {
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: bold;
+}
+
+.book-title {
+  font-size: 39px;
+  font-weight: bold;
+  min-height: 100px;
+  height: fit-content;
+}
+
+.book-text {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: 'Overpass', sans-serif;
+}
+
+.read-more-button {
+  width: 100%;
+  height: 18px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: -35px;
+  left: 0;
+}
+
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+.read-more-button:hover {
+  background-color: #1a24fb;
+  color: #f8f7f3;
+}
